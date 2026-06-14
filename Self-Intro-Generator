@@ -1,0 +1,36 @@
+import datetime
+
+def generate_self_intro():
+    """Collects user details and prints a formatted self-introduction."""
+    print("--- Welcome to the Self-Intro Generator ---")
+    
+    # Collecting user input
+    name = input("Name: ")
+    age = input("Age: ")
+    city = input("City: ")
+    profession = input("Profession: ")
+    hobby = input("Hobby: ")
+
+    # Creating the formatted output
+    intro = (f"Hello! My name is {name}. I'm {age} years old and live in {city}.\n"
+             f"I work as a {profession} and I absolutely enjoy {hobby} in my free time.\n"
+             f"Nice to meet you!")
+    
+    # Adding a timestamp
+    current_date = datetime.date.today().isoformat()
+    footer = f"Logged on: {current_date}"
+    
+    # Creating a dynamic border based on the text length
+    max_len = max(len(intro.split('\n')[0]), len(footer))
+    border = "*" * (max_len + 4)
+
+    # Printing final output
+    print(f"\n{border}")
+    print(f"* {intro.split('\n')[0]}  *")
+    print(f"* {intro.split('\n')[1]}  *")
+    print(f"* {intro.split('\n')[2]}  *")
+    print(f"* {footer}  *")
+    print(border)
+
+if __name__ == "__main__":
+    generate_self_intro()
