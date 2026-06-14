@@ -1,2 +1,9 @@
 # Python-Minor-Projects
-Python projects &amp; exercises by Bhimasha Jamadar. Focused on building clean, modular, and efficient code.
+Python projects & exercises by Bhimasha Jamadar. Focused on building clean, modular, and efficient code.
+
+## My Projects
+| Project Name | Description |
+| **Self-Intro Generator** | A script that generates personalized introductions based on user input. |
+
+---
+*Stay tuned—more projects coming soon!*
